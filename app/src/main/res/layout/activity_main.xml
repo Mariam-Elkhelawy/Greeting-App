@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/greeting"
     tools:context=".MainActivity">
 
     <EditText
@@ -15,15 +16,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="270dp"
+        android:textColorHint="#D1C3D1"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="319dp" />
 
     <Button
         android:id="@+id/mtBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#977697"
         android:text="Say Hello !"
+        android:layout_marginTop="430dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="100dp"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="355dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to greeting app !"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="138dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
